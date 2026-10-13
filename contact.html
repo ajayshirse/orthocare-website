@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — OrthoCare Bone &amp; Joint Clinic</title>
+  <meta name="description" content="Contact OrthoCare: clinic address, phone, email, opening hours and a contact form. Placeholder details.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="OrthoCare home"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0b2545"/><path d="M12 28 L28 12" stroke="#c8f169" stroke-width="4" stroke-linecap="round"/><circle cx="12" cy="28" r="4" fill="#fff"/><circle cx="28" cy="12" r="4" fill="#fff"/><path d="M12 12 A16 16 0 0 1 28 28" fill="none" stroke="#0e7c86" stroke-width="2" stroke-dasharray="2 3"/></svg><span>OrthoCare<small>Bone &amp; Joint Clinic</small></span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="nav-list"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="doctors.html">Doctors</a></li><li><a class="nav-link" href="treatments.html">Treatments</a></li><li><a class="nav-link" href="patient-resources.html">Patient Resources</a></li><li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li><li class="nav-cta"><a class="btn btn--primary btn--sm" href="appointment.html"><i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Book Appointment</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-title"><div class="container"><h1>Contact us</h1><p>Questions before you book? Write to us or visit the clinic.</p></div></section>
+
+<section class="section">
+  <div class="container form-layout">
+    <div class="form-panel" data-reveal>
+      <h2>Send a message</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="c-name">Your name <span class="req" aria-hidden="true">*</span></label><input id="c-name" name="name" type="text" required data-label="Your name" autocomplete="name" aria-describedby="c-name-error"><p class="field-error" id="c-name-error"></p></div>
+          <div class="field"><label for="c-phone">Phone number</label><input id="c-phone" name="phone" type="tel" data-label="Phone number" data-type="phone" autocomplete="tel" aria-describedby="c-phone-error"><p class="field-error" id="c-phone-error"></p></div>
+          <div class="field field--full"><label for="c-email">Email <span class="req" aria-hidden="true">*</span></label><input id="c-email" name="email" type="email" required data-label="Email address" autocomplete="email" aria-describedby="c-email-error"><p class="field-error" id="c-email-error"></p></div>
+          <div class="field field--full"><label for="c-message">Message <span class="req" aria-hidden="true">*</span></label><textarea id="c-message" name="message" required minlength="10" maxlength="1000" data-label="Message" aria-describedby="c-message-error"></textarea><p class="field-error" id="c-message-error"></p></div>
+        </div>
+        <div class="btn-row"><button type="submit" class="btn btn--primary">Send message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button></div>
+        <div class="form-status" id="contact-status" tabindex="-1" role="status"></div>
+      </form>
+    </div>
+    <aside class="stack" data-reveal>
+      <div class="info-tile card-hover"><h3><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Clinic details (placeholders)</h3>
+        <ul class="contact-lines">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>123 Placeholder Street, Your City, 000000</span></li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:hello@orthocare.example">hello@orthocare.example</a></li>
+        </ul></div>
+      <div class="info-tile card-hover"><h3><i class="fa-regular fa-clock" aria-hidden="true"></i>Opening hours (sample)</h3>
+        <table class="hours"><tbody><tr><th scope="row">Monday – Friday</th><td>9:00 – 18:00</td></tr><tr><th scope="row">Saturday</th><td>9:00 – 14:00</td></tr><tr><th scope="row">Sunday</th><td>Closed</td></tr></tbody></table></div>
+      <div class="btn-row"><a class="btn btn--dark" href="https://www.google.com/maps/search/?api=1&amp;query=orthopaedic+clinic" target="_blank" rel="noopener">Get directions <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i></a><a class="btn btn--ghost" href="appointment.html">Book Appointment</a></div>
+    </aside>
+  </div>
+</section>
+<section class="section section--tight"><div class="container" data-reveal>
+  <div class="map-embed"><iframe title="Map search for orthopaedic clinics" src="https://maps.google.com/maps?q=orthopaedic%20clinic&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+</div></section></main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="index.html" aria-label="OrthoCare home"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0b2545"/><path d="M12 28 L28 12" stroke="#c8f169" stroke-width="4" stroke-linecap="round"/><circle cx="12" cy="28" r="4" fill="#fff"/><circle cx="28" cy="12" r="4" fill="#fff"/><path d="M12 12 A16 16 0 0 1 28 28" fill="none" stroke="#0e7c86" stroke-width="2" stroke-dasharray="2 3"/></svg><span>OrthoCare<small>Bone &amp; Joint Clinic</small></span></a>
+      <p>Care for bones, joints and movement, explained clearly.</p>
+    </div>
+    <div><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="treatments.html">Treatments</a></li><li><a href="patient-resources.html">Patient Resources</a></li><li><a href="contact.html">Contact</a></li><li><a href="appointment.html">Book Appointment</a></li></ul></div>
+    <div><h3>Treatments</h3><ul><li><a href="treatments.html#joint-replacement">Joint Replacement</a></li><li><a href="treatments.html#knee-pain">Knee Pain Treatment</a></li><li><a href="treatments.html#hip-pain">Hip Pain Treatment</a></li><li><a href="treatments.html#sports-injury">Sports Injury Treatment</a></li><li><a href="treatments.html#fracture-management">Fracture Management</a></li><li><a href="treatments.html">All treatments</a></li></ul></div>
+    <div><h3>Visit us</h3>
+      <ul>
+        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 123 Placeholder Street, Your City</li>
+        <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+910000000000">+91 00000 00000</a></li>
+        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:hello@orthocare.example">hello@orthocare.example</a></li>
+        <li><i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Sat 9:00–18:00 · Sun closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom"><p>&copy; <span data-year>2026</span> OrthoCare. Sample website: doctors, addresses, contact details, figures and testimonials are placeholders. Photos are stock images. Information here is general and does not replace advice from a qualified doctor.</p></div>
+</footer>
+<button class="icon-btn to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+<div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

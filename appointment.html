@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an Appointment — OrthoCare</title>
+  <meta name="description" content="Request an appointment with an OrthoCare orthopaedic specialist. The clinic confirms your time.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="OrthoCare home"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0b2545"/><path d="M12 28 L28 12" stroke="#c8f169" stroke-width="4" stroke-linecap="round"/><circle cx="12" cy="28" r="4" fill="#fff"/><circle cx="28" cy="12" r="4" fill="#fff"/><path d="M12 12 A16 16 0 0 1 28 28" fill="none" stroke="#0e7c86" stroke-width="2" stroke-dasharray="2 3"/></svg><span>OrthoCare<small>Bone &amp; Joint Clinic</small></span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="nav-list"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="doctors.html">Doctors</a></li><li><a class="nav-link" href="treatments.html">Treatments</a></li><li><a class="nav-link" href="patient-resources.html">Patient Resources</a></li><li><a class="nav-link" href="contact.html">Contact</a></li><li class="nav-cta"><a class="btn btn--primary btn--sm" href="appointment.html"><i class="fa-regular fa-calendar-check" aria-hidden="true"></i> Book Appointment</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-title"><div class="container"><h1>Book an appointment</h1><p>Send us a request and the clinic will confirm a time with you.</p></div></section>
+
+<section class="section">
+  <div class="container form-layout">
+    <div class="form-panel" data-reveal>
+      <h2>Your details</h2>
+      <form id="appointment-form" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="name">Patient name <span class="req" aria-hidden="true">*</span></label><input id="name" name="name" type="text" required data-label="Patient name" autocomplete="name" aria-describedby="name-error"><p class="field-error" id="name-error"></p></div>
+          <div class="field"><label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" required data-label="Phone number" data-type="phone" autocomplete="tel" placeholder="+91 00000 00000" aria-describedby="phone-error"><p class="field-error" id="phone-error"></p></div>
+          <div class="field field--full"><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input id="email" name="email" type="email" required data-label="Email address" autocomplete="email" aria-describedby="email-error"><p class="field-error" id="email-error"></p></div>
+          <div class="field"><label for="doctor">Preferred doctor <span class="req" aria-hidden="true">*</span></label><select id="doctor" name="doctor" required data-label="Preferred doctor" aria-describedby="doctor-error"><option value="">Choose preferred doctor</option><option value="any">No preference</option><option value="anika">Dr. Anika Sample — Joint Replacement</option><option value="rohan">Dr. Rohan Sample — Sports Injury &amp; Arthroscopy</option><option value="meera">Dr. Meera Sample — Spine Care</option><option value="kabir">Dr. Kabir Sample — Trauma &amp; Fracture</option><option value="isha">Dr. Isha Sample — Rehabilitation</option><option value="vikram">Dr. Vikram Sample — Hip &amp; Knee Care</option></select><p class="field-error" id="doctor-error"></p></div>
+          <div class="field"><label for="treatment">Treatment or consultation <span class="req" aria-hidden="true">*</span></label><select id="treatment" name="treatment" required data-label="Treatment or consultation" aria-describedby="treatment-error"><option value="">Choose treatment or consultation</option><option value="general-consultation">General orthopaedic consultation</option><option value="follow-up">Follow-up visit</option><option value="second-opinion">Second opinion</option><option value="joint-replacement">Joint Replacement</option><option value="knee-pain">Knee Pain Treatment</option><option value="hip-pain">Hip Pain Treatment</option><option value="sports-injury">Sports Injury Treatment</option><option value="fracture-management">Fracture Management</option><option value="arthroscopy">Arthroscopy</option><option value="spine-care">Spine Care</option><option value="arthritis-management">Arthritis Management</option><option value="shoulder-elbow">Shoulder and Elbow Treatment</option><option value="physiotherapy">Physiotherapy and Rehabilitation</option></select><p class="field-error" id="treatment-error"></p></div>
+          <div class="field"><label for="date">Preferred date <span class="req" aria-hidden="true">*</span></label><input id="date" name="date" type="date" required data-label="Preferred date" aria-describedby="date-error"><p class="field-error" id="date-error"></p></div>
+          <div class="field"><label for="time">Preferred time <span class="req" aria-hidden="true">*</span></label><select id="time" name="time" required data-label="Preferred time" aria-describedby="time-error"><option value="">Choose preferred time</option><option value="09:00">09:00</option><option value="10:00">10:00</option><option value="11:00">11:00</option><option value="12:00">12:00</option><option value="14:00">14:00</option><option value="15:00">15:00</option><option value="16:00">16:00</option><option value="17:00">17:00</option></select><p class="field-error" id="time-error"></p></div>
+          <div class="field field--full"><label for="message">Additional message</label><textarea id="message" name="message" maxlength="1000" data-label="Message" placeholder="Tell us briefly what is bothering you" aria-describedby="message-error"></textarea><p class="field-error" id="message-error"></p></div>
+        </div>
+        <div class="btn-row"><button type="submit" class="btn btn--primary">Send request <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button><button type="reset" class="btn btn--ghost">Clear</button></div>
+        <div class="form-status" id="appointment-status" tabindex="-1" role="status"></div>
+      </form>
+    </div>
+    <aside class="side-panel" data-reveal>
+      <h3>Before you send</h3>
+      <ul>
+        <li><i class="fa-solid fa-circle-info" aria-hidden="true"></i><span>This is a request. Your time is confirmed only when the clinic contacts you.</span></li>
+        <li><i class="fa-solid fa-file-medical" aria-hidden="true"></i><span>Keep earlier reports and scans ready for your visit.</span></li>
+        <li><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i><span>For a serious injury or sudden severe pain, go to an emergency department instead.</span></li>
+        <li><i class="fa-solid fa-phone" aria-hidden="true"></i><span>Prefer to talk? <a href="tel:+910000000000">+91 00000 00000</a> (placeholder)</span></li>
+      </ul>
+      <a class="btn btn--lime" href="patient-resources.html#checklist">Visit checklist</a>
+    </aside>
+  </div>
+</section></main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="index.html" aria-label="OrthoCare home"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0b2545"/><path d="M12 28 L28 12" stroke="#c8f169" stroke-width="4" stroke-linecap="round"/><circle cx="12" cy="28" r="4" fill="#fff"/><circle cx="28" cy="12" r="4" fill="#fff"/><path d="M12 12 A16 16 0 0 1 28 28" fill="none" stroke="#0e7c86" stroke-width="2" stroke-dasharray="2 3"/></svg><span>OrthoCare<small>Bone &amp; Joint Clinic</small></span></a>
+      <p>Care for bones, joints and movement, explained clearly.</p>
+    </div>
+    <div><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="doctors.html">Doctors</a></li><li><a href="treatments.html">Treatments</a></li><li><a href="patient-resources.html">Patient Resources</a></li><li><a href="contact.html">Contact</a></li><li><a href="appointment.html">Book Appointment</a></li></ul></div>
+    <div><h3>Treatments</h3><ul><li><a href="treatments.html#joint-replacement">Joint Replacement</a></li><li><a href="treatments.html#knee-pain">Knee Pain Treatment</a></li><li><a href="treatments.html#hip-pain">Hip Pain Treatment</a></li><li><a href="treatments.html#sports-injury">Sports Injury Treatment</a></li><li><a href="treatments.html#fracture-management">Fracture Management</a></li><li><a href="treatments.html">All treatments</a></li></ul></div>
+    <div><h3>Visit us</h3>
+      <ul>
+        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 123 Placeholder Street, Your City</li>
+        <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+910000000000">+91 00000 00000</a></li>
+        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:hello@orthocare.example">hello@orthocare.example</a></li>
+        <li><i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Sat 9:00–18:00 · Sun closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom"><p>&copy; <span data-year>2026</span> OrthoCare. Sample website: doctors, addresses, contact details, figures and testimonials are placeholders. Photos are stock images. Information here is general and does not replace advice from a qualified doctor.</p></div>
+</footer>
+<button class="icon-btn to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+<div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/appointment.js"></script>
+</body>
+</html>
